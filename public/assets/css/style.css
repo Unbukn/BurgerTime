@@ -1,8 +1,10 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body{
+  background-color: rgb(65, 65, 110);
 }
+.container{
+  background-color: rgb(155, 151, 151);
+}
+
 
 .label {
   font-weight: bold;
@@ -16,7 +18,4 @@ li {
 
 .form-group {
   margin-bottom: 5px;
-}
-body{
-  background-color: rgb(74, 74, 88);
 }

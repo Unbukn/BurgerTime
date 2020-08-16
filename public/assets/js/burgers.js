@@ -3,7 +3,7 @@ $(function () {
       event.preventDefault();
       console.log("works")
       let newBurger = {
-          name: $("#bur").val().trim()
+          name: $("#newBurger").val().trim()
       }
       $.ajax("/api/burgers", {
           type: "POST",

@@ -1,34 +1,43 @@
-<h1>Burgers!</h1>
 
-<h2>Eat your Burgers</h2>
-
-<ol>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burger/burger-row devour=true}}
-    {{/unless}}
-  {{/each}}
-</ol>
-<hr>
-<h2>Burgers you have eaten</h2>
-
-<ol>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burger/burger-row devour=false}}
-    {{/if}}
-  {{/each}}
-</ol>
-
-
-
-
-<h2>Add your Burger!</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <input type="text" id="bur" name="name">
+<div class="container level">
+<div class="level-left">
+  <div class="notification">
+      <h2>Just eat some burgers</h2>
+    <ol>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burger/burger-row devour=true}}
+        {{/unless}}
+      {{/each}}
+    </ol>
   </div>
+</div>
 
-  <button type="submit">Add Burger</button>
-</form>
+<div class="level-right">
+<div class="notification">
+    <h2>Burgers you have eaten</h2>
+      <ol>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burger/burger-row devour=false}}
+          {{/if}}
+        {{/each}}
+      </ol>
+  </div>  
+</div>
+<hr>
+
+<div class="container">
+  <div class="notification">
+    <strong><h2>Add a burger the list!</h2></strong>
+    <form class="create-form">
+      <div class="form-group">
+        <input type="text" id="newBurger" name="name">
+      </div>
+      <button type="submit">Add Burger</button>
+    </form>    
+  </div>
+</div>
+
+
+
