@@ -2,7 +2,7 @@
 var mysql = require("mysql");
 // establish connection to the database
 let connection = mysql.createConnection({
-  host: "database-1.cafvzihsfdz1.us-west-2.rds.amazonaws.com",
+  host: "",
   port: 3306,
   user: "admin",
   password: "Password123",
